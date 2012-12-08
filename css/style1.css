@@ -1,0 +1,29 @@
+body{
+	background-color: #696969;
+	color:#ffffff;
+}
+
+#title{
+	color:#ffffff;
+	font-family:Impact,sans-serif;
+	font-size: 30pt;
+	line-height:1.5em;
+	text-decoration:underline overline;
+}
+
+#update{
+	color:#ffff80;
+	text-decoration:blink;
+}
+
+#white_shadow{
+	text-shadow:#ffffff 4px 4px 3px
+}
+
+#sans{
+	font-family:Sans;
+}
+
+#serif{
+	font-family:Serif;
+}

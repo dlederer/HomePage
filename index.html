@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+	<title>迷路の探索日記</title>
+	<meta http-equiv="Content-Type" content="text/html; charset = UTF-8">
+	<meta name="description" content="適当に書きなぐっていく何か">
+	<meta name="keyword" content="Linux プログラミング ubuntu 数学">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet" type="text/css" href="/css/style1.css" media="all">
+	<script type="text/javascript">
+	<!--
+	// -->
+	</script>
+</head>
+<body>
+	<center>
+		<div id="title"><div id="white_shadow">WELCOME TO HOMEPAGE!</div></div>
+		<br><br><br>
+		<img src="img/top_img.png" alt="表示できませんでした">
+		<br><br><br>
+		<div id="update">トップページ更新!</div>
+		<br><br><br>
+		<a href="../html/self.hml"><font color="#ffffff">プロフィール</font></a>
+		<br><br>
+		<del><a href="../html/login.ht"><font color="#ffffff">チャット</font></a></del>
+		　
+		<del><a href="../cgi/bbs_top.cgi"><font color="#ffffff">掲示板</font></a></del>
+		<br><br><br><br><br>
+		
+		<?php
+			$filename = "cgi/count.cgi";
+			$fp = fopen($filename,"r+");
+			$count = fgets($fp,32);
+			$count = $count + 1;
+			fclose($fp);
+			$fp = fopen($filename,"w");
+			fclose($fp);
+			$fp = fopen($filename,"r+");
+			fwrite($fp,$count);
+			fclose($fp);
+			print "あなたは".$count."回目の訪問者です";
+			print "<br>";
+			echo "           (　´∀｀)ゞ ｲﾗｯｼｬｰｲ";
+		?>
+	</center>
+</body>
+</html>
